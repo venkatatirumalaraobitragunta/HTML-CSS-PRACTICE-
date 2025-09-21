@@ -1,0 +1,78 @@
+#HTML&CSS-Chat Page 
+#HTMLCode:- 
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div>
+        <div class="bg-container">
+            <h1 class="heading">Rahul</h1>
+            <div class="msg-container">
+                <p class="msg-text msg-sent">Hello Rahul,how are you?</p>
+                <p class="msg-text msg-received">Hi Varakumar,I am good.How about you?</p>
+                <p class="msg-text msg-sent">I'm fine.I published my website recently</p>
+                <p class="msg-text msg-received">Oh great Varakumar! Can you send me the URL?</p>
+                <p class="msg-text msg-sent">htpps://varakumar.ccbp.tech</p>
+                <p class="msg-text msg-received">Awesome Varakumar,where did you learn?</p>
+                <p class="msg-text msg-sent">NxtWave CCBP 4.0 Program</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+#CSS-Code 
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+.bg-container {
+    background-image: url("https://d2clawv67efefq.cloudfront.net/ccbp-static-website/chatbg.png");
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+
+}
+
+.heading {
+    text-align: center;
+    color: white;
+    font-family: "Roboto";
+    padding: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #52606d;
+    padding-bottom: 15px;
+}
+
+.msg-container {
+    padding: 20px;
+}
+
+.msg-text {
+    color: white;
+    font-family: "Roboto";
+    font-size: 14px;
+    padding: 14px;
+}
+
+.msg-received {
+
+    background-color: #52606d;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.msg-sent {
+    text-align: right;
+    background-color: #47a3f3;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
